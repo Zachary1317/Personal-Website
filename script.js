@@ -84,6 +84,26 @@ mainBtns.forEach(btn=>{
 
 // end of main button
 
+// menu
+const navbar = document.querySelector(".navbar")
+const menu = document.querySelector(".menu-icon")
+
+document.addEventListener("scroll",()=>{
+    navbar.classList.add("hidden-nav");
+    menu.classList.add("show-menu");
+
+    if(window.scrollY === 0){
+        navbar.classList.remove("hidden-nav");
+        menu.classList.remove("show-menu");
+    }
+})
+
+menu.addEventListener("click",()=>{
+    navbar.classList.remove("hidden-nav");
+    menu.classList.remove("show-menu");
+})
+// end of menu
+
 // about me text
 const aboutMeText = document.querySelector('.about-me-text');
 const aboutMeTextContent = "Hi guys, I am Zachary. Thank you for visiting my personal website. I will share with you guys more about my stories.";
@@ -151,3 +171,27 @@ document.querySelectorAll('.service-btn').forEach((service)=>{
     })
 })
 // end of section4
+
+// Section5
+// Form
+const formHeading = document.querySelector(".form-heading");
+const formInput = document.querySelectorAll(".contact-form-input");
+
+formInput.forEach((input)=>{
+    input.addEventListener("focus",()=>{
+        formHeading.style.opacity = "0";
+        setTimeout(()=>{
+            formHeading.textContent = `Your ${input.placeholder}`;
+            formHeading.style.opacity = "1";
+        },300);
+    })
+    input.addEventListener("blur",()=>{
+        formHeading.style.opacity = "0";
+        setTimeout(()=>{
+            formHeading.textContent = `Let's Talk`;
+            formHeading.style.opacity = "1";
+        },300);
+    })
+})
+// End of Form
+// End of Section5
