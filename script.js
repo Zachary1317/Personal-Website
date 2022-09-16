@@ -102,6 +102,7 @@ Array.from(aboutMeTextContent).forEach(char=>{
 // projects
 const projects = document.querySelectorAll('.project');
 const container = document.querySelector('.container');
+const projectHiddenBtn = document.querySelector('.project-hidden-btn');
 
 projects.forEach(project=>{
     project.addEventListener('mouseenter',()=>{
@@ -115,9 +116,38 @@ projects.forEach(project=>{
     // big img
     project.addEventListener("click",()=>{
         const bigImgWrapper = document.createElement("div");
+
+
+
         bigImgWrapper.className = "project-img-wrapper";
         container.appendChild(bigImgWrapper);
+
+        const imgPath = project.firstElementChild.getAttribute("src").split(".")[0];
+        console.log(imgPath)
+        const bigImg = document.createElement('img');
+        bigImg.className = "project-img";
+        bigImg.setAttribute("src",`${imgPath}-big.jpg`);
+        bigImgWrapper.appendChild(bigImg);
+        bigImgWrapper.style.overflowY = "scroll";
+        document.body.style.overflowY = "hidden";
+
+        projectHiddenBtn.classList.add("change");
+        projectHiddenBtn.onclick = ()=>{
+            projectHiddenBtn.classList.remove("change");
+            bigImgWrapper.remove();
+            document.body.style.overflowY = "scroll";
+        }
     });
     // end of big img
 })
 // end of projects
+
+// section4
+document.querySelectorAll('.service-btn').forEach((service)=>{
+    service.addEventListener("click",(e)=>{
+        e.preventDefault();
+        const serviceText = service.nextElementSibling;
+        serviceText.classList.toggle("change");
+    })
+})
+// end of section4

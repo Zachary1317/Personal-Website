@@ -326,8 +326,8 @@ html{
     display: flex;
 }
 
-/* section-2 heading */
-.section-2-heading{
+/* section heading */
+.section-heading{
     position: relative;
     font-size: 2rem;
     font-weight: 300;
@@ -385,10 +385,12 @@ html{
     padding: 10rem 0;
     margin-top: 10rem;
     position: relative;
+    display: flex;
 }
 
 /* projects */
 .projects{
+    position: relative;
     flex-wrap: wrap;
     padding-bottom: 15rem;
 }
@@ -447,9 +449,100 @@ html{
     height: 100%;
     background-color: rgba(0,0,0,.7);
 }
+
+.project-img{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 7rem 20rem;
+    opacity: 0.9;
+}
+
+.project-hidden-btn{
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    transform: scale(0);
+    visibility: hidden;
+}
+
+.change.project-hidden-btn{
+    transform: scale(1);
+    visibility: visible;
+
+}
 /* end of big img */
 /* end of projects */
 
 
 
 /* end of section3 */
+
+/* section4 */
+.section-4{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+/* service */
+.service-wrapper{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service{
+    width: 70%;
+    margin:2rem 0;
+    border-bottom: 0.5rem solid #fff;
+
+}
+
+.service-btn{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 15rem;
+}
+
+.service-btn span{
+    font-family: "Poppins";
+    font-size: 10rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+.service-content{
+    font-size: 5rem;
+    color: #777;
+    letter-spacing: 0.1rem;
+    height: 0rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.change.service-content{
+    height:15rem;
+    visibility:visible;
+    opacity: 1;
+    transition: height .5s,opacity;
+}
+
+
+
+
+/* end of service */
+/* end of section4 */
