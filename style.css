@@ -113,7 +113,7 @@ html{
 }
 
 .navbar-link{
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -166,7 +166,8 @@ html{
     position: absolute;
     top: 2rem;
     left: 5rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
     text-decoration: uppercase;
     color: white;
 }
@@ -230,7 +231,7 @@ html{
 .main-circle{
     width: 55rem;
     height: 55rem;
-    position: absolute;
+    position: relative;
     overflow: hidden;
     border-radius: 50%;
     transition: width 0.2s,height 0.2s;
@@ -253,6 +254,16 @@ html{
 }
 /* end of animated circles */
 
+/* self intro */
+
+/* end of self intro */
+.self_intro{
+    width: 55rem;
+    margin: 0 20rem;
+    font-family: "Poppins",sans-serif;
+    font-size: 13rem;
+    color: #fff;
+}
 /* featured text */
 .featured-text-container{
     position:absolute;
