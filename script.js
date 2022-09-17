@@ -194,4 +194,36 @@ formInput.forEach((input)=>{
     })
 })
 // End of Form
+
+// form validation
+const form = document.querySelector(".contact-form")
+const username = document.getElementById("name")
+const email = document.getElementById("email")
+const subject = document.getElementById("subject")
+const message = document.getElementById("message")
+
+const checkFields = (inputArr)=>{
+    inputArr.forEach((input)=>{
+        if(input.value.trim()===""){
+            error(input,`${input.id} is required.`)
+        }else{
+            success(input);
+        }
+    })
+}
+
+const success = (input)=>{
+    input.nextElementSibling.classList.remove("error");
+}
+
+const error = (input,message)=>{
+    input.nextElementSibling.classList.add("error");
+    input.nextElementSibling.textContent = message;
+}
+
+form.addEventListener("submit",e=>{
+    e.preventDefault();
+    checkFields([username,email,subject,message]);
+})
+// end of form validation
 // End of Section5

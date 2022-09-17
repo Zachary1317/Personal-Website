@@ -611,6 +611,21 @@ html{
 }
 
 /* Form */
+.message{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    margin: 0 auto 1rem 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.error.message{
+    visibility: visible;
+    opacity: 1;
+}
+
 .form-heading{
     font-family: "Poppins",sans-serif;
     font-size: 6rem;
@@ -671,3 +686,78 @@ html{
 }
 /* end of Slide show */
 /* End of Section5 */
+
+/* response */
+/* @media (max-width:1500px) {
+    .circle{
+        width: 15rem;
+        height: 15rem;
+    } 
+    .main-circle{
+        width: 45rem;
+        height: 45rem;
+    }
+    .main-circle img{
+        width: 160%;
+        height: 160%;
+    }
+    .about-me-text{
+        font-size: 11rem;
+    }
+    .section-4{
+        margin-bottom: 10rem;
+    }
+    .service-btn span{
+        font-size: 9rem;
+    }
+    .service-content{
+        font-size: 4rem;
+    }
+} */
+
+@media (max-width:1350px) {
+    .main-btn{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .circle{
+        display: none;
+    }
+    .about-me-text{
+        font-size: 10rem;
+    }
+}
+
+@media (max-width:1150px) {
+    html{
+        font-size: 55%;
+    }
+    .navbar-link{
+        margin:0 2rem;
+    }
+    .main-circle{
+        width:40rem;
+        height: 40rem;
+    }
+    .about-me-text span{
+        font-size: 7.5rem;
+    }
+    .service-btn{
+        height: 12rem;
+    }
+    .service-btn span{
+        height: 8rem;
+    }
+    .service-content{
+        font-size: 3.5rem;
+    }
+    .slideshow{
+        margin: 5rem 0;
+    }
+
+}
+
+@media (max-width:900px) {
+    
+}
+/* end of response */
