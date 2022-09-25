@@ -96,7 +96,8 @@ html{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(217, 212, 212, 0.2),rgba(217, 212, 212, 0.2)),url(images/background1.jpeg)center no-repeat;
+    background: url(images/background2.jpg)center no-repeat;
+    opacity: .5;
     background-size: cover;
 }
 /* end of page bg */
@@ -115,7 +116,7 @@ html{
 .navbar-link{
     font-size: 3rem;
     font-weight: 700;
-    color: #fff;
+    color: #2d3142;
     text-transform: uppercase;
     margin: 0 2.5rem;
     z-index: 100;
@@ -169,7 +170,7 @@ html{
     font-size: 3rem;
     font-weight: 600;
     text-decoration: uppercase;
-    color: white;
+    color: #2d3142;
 }
 /* end of logo */
 
@@ -200,34 +201,6 @@ html{
     left: 0;
 }
 
-.circle-1{
-    background: url(images/landing/circle-1-img.jpg) center no-repeat;
-    background-size: cover;
-    border: .5rem dotted #a14b1a;
-    background-clip: content-box;
-}
-
-.circle-2{
-    background: url(images/landing/circle-2-img.jpg) center no-repeat;
-    background-size: cover;
-    border: .5rem dotted #a14b1a;
-    background-clip: content-box;
-}
-
-.circle-3{
-    background: url(images/landing/circle-3-img.jpg) center no-repeat;
-    background-size: cover;
-    border: .5rem dotted #a14b1a;
-    background-clip: content-box;
-}
-
-.circle-4{
-    background: url(images/landing/circle-4-img.jpg) center no-repeat;
-    background-size: cover;
-    border: .5rem dotted #a14b1a;
-    background-clip: content-box;
-}
-
 .main-circle{
     width: 55rem;
     height: 55rem;
@@ -235,6 +208,7 @@ html{
     overflow: hidden;
     border-radius: 50%;
     transition: width 0.2s,height 0.2s;
+    opacity: .9;
 }
 
 .main-circle:hover{
@@ -262,11 +236,11 @@ html{
     margin: 0 20rem;
     font-family: "Poppins",sans-serif;
     font-size: 13rem;
-    color: #fff;
+    color: #2d3142;
 }
 /* featured text */
 .featured-text-container{
-    position:absolute;
+    position:fixed;
     width: 100%;
     height: 100%;
     display: flex;
@@ -274,15 +248,15 @@ html{
 }
 
 .featured-text{
-    font-size: 2rem;
-    color: white;
+    font-size: 3rem;
+    color: #2d3142;
     text-transform: uppercase;
     align-self: center;
     /* these two line make it become a line */
     width: 0;
     word-wrap: break-word;
     position: sticky;
-    line-height: 3.5;
+    line-height: 3;
 }
 
 .featured-text-1{
@@ -383,24 +357,24 @@ html{
 
 /* section2 */
 .section-2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     position: relative;
-    padding: 10rem 10rem 15rem 10rem;
     color: #fff;
     display: flex;
+    flex-direction: column;
 }
 
 /* section heading */
-.section-heading{
+.section-heading-2{
     position: relative;
-    font-size: 2rem;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    width: 0;
-    word-break: break-all;
-    line-height: 3.5;
-    align-self: center;
-    margin: 0 10rem 0 auto; 
+    font-size: 10rem;
+    font-weight: 500;
+    color: #2d3142;
+    border-bottom: 2px #000 solid;
+    margin-bottom: 3rem;
+    width: max-content;
 }
 /* end of section-2 heading */
 
@@ -408,12 +382,12 @@ html{
 .about-me-text span{
     position:relative;
     font-family: "Poppins",sans-serif;
-    font-size: 15rem;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 3rem;
-    line-height: 0.9;
-    text-shadow: 0 0 1rem #9b0e0e;
+    font-size: 5rem;
+    /* font-weight: bold; */
+    color: #2d3142;
+    letter-spacing: .5rem;
+    line-height: 1.1;
+    /* text-shadow: 0 0 1rem black; */
 }
 
 @keyframes aboutMeTextAnim {
@@ -538,7 +512,28 @@ html{
 .change.project-hidden-btn{
     transform: scale(1);
     visibility: visible;
+}
 
+.upArrow{
+    display: inline-block;
+    visibility: hidden;
+    width: 0rem;
+}
+
+.downArrow{
+    display: inline-block;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.changeDownArrow.downArrow{
+    transform: scale(0);
+    visibility: hidden;
+}
+
+.changeUpArrow.upArrow{
+    transform: scale(1);
+    visibility: visible;
 }
 /* end of big img */
 /* end of projects */
@@ -549,9 +544,21 @@ html{
 
 /* section4 */
 .section-4{
+    margin:10rem auto 0 auto;
+    width: 70%;
     position: relative;
-    width: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+.section-heading-4{
+    position: relative;
+    font-size: 10rem;
+    font-weight: 500;
+    color: #2d3142;
+    border-bottom: 2px #000 solid;
+    margin-bottom: 3rem;
+    width: max-content;
 }
 
 /* service */
@@ -564,9 +571,9 @@ html{
 }
 
 .service{
-    width: 70%;
+    width: 100%;
     margin:2rem 0;
-    border-bottom: 0.5rem solid #fff;
+    border-bottom: 0.2rem solid #2d3142;
 
 }
 
@@ -574,17 +581,14 @@ html{
     width: 100%;
     position: relative;
     display: block;
-    height: 15rem;
+    height: 10rem;
 }
 
 .service-btn span{
-    font-family: "Poppins";
-    font-size: 10rem;
-    font-style: italic;
-    font-weight: bold;
-    color: #fff;
-    position: absolute;
-    right: 0;
+    font-size: 7rem;
+    font-weight: 500;
+    color: #2d3142;
+    margin-bottom: 2rem;
 }
 
 .service-content{
@@ -594,11 +598,25 @@ html{
     height: 0rem;
     visibility: hidden;
     opacity: 0;
-    transition: all .2s;
+    margin-bottom: 5rem;
+}
+
+.service-content .title{
+    display: inline;
+
+}
+
+.service-content .time{
+    display: inline;
+    
+}
+
+.service-content .body{
+    
 }
 
 .change.service-content{
-    height:15rem;
+    height:max-content;
     visibility:visible;
     opacity: 1;
     transition: height .5s,opacity;

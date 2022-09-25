@@ -167,9 +167,14 @@ document.querySelectorAll('.service-btn').forEach((service)=>{
     service.addEventListener("click",(e)=>{
         e.preventDefault();
         const serviceText = service.nextElementSibling;
+        const upArrow = service.children[1];
+        const downArrow = service.children[2];
+        upArrow.classList.toggle("changeUpArrow");
+        downArrow.classList.toggle("changeDownArrow");
         serviceText.classList.toggle("change");
     })
 })
+
 // end of section4
 
 // Section5
