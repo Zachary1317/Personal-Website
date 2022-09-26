@@ -22,6 +22,7 @@
     <div class="menu-icon center">
       <div class="menu-icon-line"></div>
       <div class="menu-icon-line"></div>
+      <div class="menu-icon-line"></div>
     </div>
     <!-- end of Nav -->
 
@@ -29,8 +30,8 @@
     <div class="navbar">
       <a href="#section-1" class="navbar-link">Home</a>
       <a href="#section-2" class="navbar-link">About Me</a>
-      <a href="#section-3" class="navbar-link">Project</a>
-      <a href="#section-4" class="navbar-link">Contact Me</a>
+      <a href="#section-4" class="navbar-link">Experience</a>
+      <a href="#section-5" class="navbar-link">Contact Me</a>
     </div>
     <!-- end of Navbar -->
 
@@ -51,13 +52,13 @@
       <div class="main-circle">
         <img src="images/landing/personal.jpeg" alt="">
       </div>
-      <div class="self_intro">Hi, 'm Zachary!</div>
+      <div class="self_intro">Hi, I'm<br>Zachary!</div>
       <!-- end of Animated Circles -->
       
       <!-- featured text -->
       <div class="featured-text-container">
-        <h4 class="featured-text featured-text-1">Creative</h4>
-        <h4 class="featured-text featured-text-2">Design</h4>
+        <h4 class="featured-text featured-text-1">Creativity</h4>
+        <h4 class="featured-text featured-text-2">Learning</h4>
       </div>
       <!-- end of featured text -->
 
@@ -79,11 +80,18 @@
     <!-- section2 -->
     <section class="section-2" id="section-2">
       <!-- section2 heading -->
-      <h1 class="section-heading-2">Who am I</h1>
+      <h1 class="section-heading-2">Who I am</h1>
       <!-- end of section2 heading -->
 
       <!-- About Me text -->
-      <p class="about-me-text"></p>
+      <p class="about-me-text">
+        <span>I'm Zachary,</span> currently a Master student in Information Technology at the University of Melbourne.<br>
+        <span>As a student,</span> I take all my courses seriously and have a good foundation of IT knowledge.<br>
+        <span>As a developer,</span> I am a quick learner. I embrace new knowledge and actively translate it into my working abilities.<br>
+        <span>As a team player,</span> I am good at communication and can work efficiently with colleagues.<br>
+        <span>As a runner,</span> I run at least 10km a week, I love sports and believe that a healthy body is the foundation of everything.<br>
+      </p>
+
       <!-- end of About Me text -->
 
       <!-- main button -->
@@ -164,9 +172,29 @@
             <span class="downArrow">↓</span>
           </a>
           <div class="service-content">
-            <p class="title">Title</p>
-            <p class="time">Time</p>
-            <p class="body">Content</p>
+            <div class="project-container">
+              <p class="title">Personal Website | </p>
+              <p class="position">Front-end developer</p>
+              <p class="time">August  2022 - Present</p>
+              <p class="body">The website you are currently visiting is built by myself from scratch with  HTML, CSS and JavaScript. I have been updating it continuously with new knowledge that I have learned. Now I am trying to reconstruct it with React.</p>
+              <a href="https://github.com/Zachary1317/Personal-website">→Github</a>
+            </div>
+            <div class="project-container">
+              <p class="title">Hozez | </p>
+              <p class="position">Full-stack developer</p>
+              <p class="time">August 2022 - Present</p>
+              <p class="body">Hozez is a property trading platform being built. We form an Agile team of ten people and expect to complete the project within three months. I am responsible for the user information management function. Here is the backend demo I built with Spring boot, Docker and Postgres, which implements the  CRUD operations of User info.
+              </p>
+              <a href="https://github.com/Zachary1317/Houzez-backend-demo">→Github</a>
+            </div>
+            <div class="project-container">
+              <p class="title">PetSitter | </p>
+              <p class="position">Front-end developer</p>
+              <p class="time">September 2022 - Present</p>
+              <p class="body">PetSitter is a mobile app that allows users to foster and adopt pets. We formed a team of four and planned to complete the project within a month. I am responsible for the development of the front end for user registration and user information display. Now I have completed the design of the UI interface with Figma and the development of some pages with React native.
+              </p>
+              <a href="https://github.com/Zachary1317/PetSitter-mobile-app">→Github</a>
+            </div>
           </div>
         </div>
         <div class="service">
@@ -177,7 +205,18 @@
             <span class="upArrow">↑</span>
             <span class="downArrow">↓</span>
           </a>
-          <p class="service-content">#######</p>
+          <div class="service-content">
+            <div class="project-container">
+              <p class="title">University of Melbourne | </p>
+              <p class="position">Master</p>
+              <p class="time">March 2021 - Present</p>
+              <p class="body">
+                Major: Information Technology<br>
+                Major Courses: Java, Algorithms, Internet Technologies, Database System<br>
+                Award: 2021 Melbourne Graduate Scholarship(10000$)<br>
+              </p>
+            </div>
+          </div>
         </div>
         <div class="service">
           <a href="#" class="service-btn">
@@ -187,7 +226,16 @@
             <span class="upArrow">↑</span>
             <span class="downArrow">↓</span>
           </a>
-          <p class="service-content">#######</p>
+          <div class="service-content">
+            <div class="project-container">
+              <p class="title">Lufax, Shanghai, China | </p>
+              <p class="position">Product manager intern</p>
+              <p class="time">September 2021 - December 2021</p>
+              <p class="body">
+                Lufax Holding Ltd is a personal financial services platform in China. During the four months of the internship, I was responsible for the design of the communication function of the Lufax App and managing the development process in an Agile team.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- end of Service -->
@@ -196,13 +244,20 @@
     <!-- end of section4 -->
 
     <!-- Section5 -->
-    <section class="section-5 center">
+    <section class="section-5 center" id="section-5">
       <!-- Section heading -->
-      <h1 class="section-heading">
+      <h1 class="section-heading-5">
         Contact Me
       </h1>
+      <div class="contact-board">
+        <div class="contact-info-container">
+          <div class="info">Email: zachary.zhao7@gmail.com</div>
+          <div class="info">LinedIn: <a href="https://www.linkedin.com/in/zachary-zhao-3017171a2/">Zachary Zhao</a> </div>
+          <div class="info">Github: <a href="https://github.com/Zachary1317">Zachary1317</a> </div>
+        </div>
+      </div>
       <!-- Form -->
-      <div class="form-wrapper">
+      <!-- <div class="form-wrapper">
         <h2 class="form-heading">Let's Talk</h2>
         <form action="" class="contact-form center">
           <p class="message">Error message</p>
@@ -222,11 +277,11 @@
           <input type="submit" class="form-submit-btn"
           value="Send Request">
         </form>
-      </div>
+      </div> -->
       <!-- End of Form -->
 
       <!-- slide show -->
-      <div class="slideshow">
+      <!-- <div class="slideshow">
         <a href="#" class="slideshow-link">
           <img src="images/social-icons/slideshow-img-1.png" alt="">
         </a>
@@ -236,7 +291,7 @@
         <a href="#" class="slideshow-link">
           <img src="images/social-icons/slideshow-img-3.png" alt="">
         </a>
-      </div>
+      </div> -->
       <!-- end of slide show -->
       <!-- end of Section heading -->
     </section>

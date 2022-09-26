@@ -105,18 +105,18 @@ menu.addEventListener("click",()=>{
 // end of menu
 
 // about me text
-const aboutMeText = document.querySelector('.about-me-text');
-const aboutMeTextContent = "Hi guys, I am Zachary. Thank you for visiting my personal website. I will share with you guys more about my stories.";
-// Array can convert the string into single alphabet
-Array.from(aboutMeTextContent).forEach(char=>{
-    const span = document.createElement('span');
-    span.textContent = char;
-    aboutMeText.appendChild(span);
+// const aboutMeText = document.querySelector('.about-me-text');
+// const aboutMeTextContent = "Hi guys, I am Zachary. Thank you for visiting my personal website. I will share with you guys more about my stories.";
+// // Array can convert the string into single alphabet
+// Array.from(aboutMeTextContent).forEach(char=>{
+//     const span = document.createElement('span');
+//     span.textContent = char;
+//     aboutMeText.appendChild(span);
 
-    // span.addEventListener("mouseenter",(e)=>{
-    //     e.target.style.animation = `aboutMeTextAnim 10s infinite`;
-    // })
-});
+//     // span.addEventListener("mouseenter",(e)=>{
+//     //     e.target.style.animation = `aboutMeTextAnim 10s infinite`;
+//     // })
+// });
 // end of about me text
 
 // projects
